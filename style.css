@@ -1,8 +1,4 @@
-/* ============================================
-   La Tavola d'Oro — Responsive CSS
-   Original styles preserved. Responsiveness
-   added via media queries and flexible units.
-   ============================================ */
+
 
 /* ---------- Base / Typography ---------- */
 .navbar-brand {
@@ -22,7 +18,7 @@ body {
 }
 
 /* ---------- Navbar ---------- */
-/* RESPONSIVE: nav links use flex-wrap and natural spacing instead of fixed px-5/ms-5 */
+
 .nav-links-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -33,12 +29,12 @@ body {
   padding: 8px 12px;
 }
 
-/* RESPONSIVE: order button stays accessible on mobile */
+
 .order-btn-wrapper {
   margin-top: 0;
 }
 
-/* On large screens restore the original top margin */
+
 @media (min-width: 992px) {
   .order-btn-wrapper {
     /* margin-top: 3rem; */
@@ -54,7 +50,7 @@ body {
   }
 }
 
-/* RESPONSIVE: mobile nav collapse background */
+
 @media (max-width: 991px) {
   .navbar {
     background-color: rgba(23, 23, 35, 0.95) !important;
@@ -104,7 +100,7 @@ body {
   overflow: hidden;
 }
 
-/* RESPONSIVE: hero image covers full width and maintains aspect ratio */
+
 .hero-img {
   width: 100%;
   min-height: 600px;
@@ -112,7 +108,7 @@ body {
   display: block;
 }
 
-/* RESPONSIVE: hero text positioned responsively */
+
 .hero-text {
   top: 0;
   left: 0;
@@ -138,7 +134,7 @@ body {
   padding-right: 60px;
 }
 
-/* RESPONSIVE: hero text adapts to smaller screens */
+
 @media (max-width: 1200px) {
   .hero-text {
     padding: 220px 120px 60px 120px;
@@ -202,7 +198,7 @@ body {
 }
 
 /* ---------- Section-2 — Offers ---------- */
-/* RESPONSIVE: offer cards row uses flex-wrap and responsive widths */
+
 .offers-row {
   padding-top: 100px;
   display: flex;
@@ -216,7 +212,7 @@ body {
   margin-right: 0 !important;
 }
 
-/* RESPONSIVE: full width on mobile */
+
 @media (max-width: 767px) {
   .m1,
   .m2 {
@@ -228,7 +224,7 @@ body {
   }
 }
 
-/* RESPONSIVE: offer card images scale properly */
+
 .imges {
   border: 5px solid rgb(213, 197, 56);
   border-radius: 100px;
@@ -252,7 +248,7 @@ body {
   overflow: hidden;
 }
 
-/* RESPONSIVE: menu card images scale without distortion */
+
 .menu-card-img {
   width: 50%;
   max-width: 160px;
@@ -260,7 +256,7 @@ body {
   object-fit: contain;
 }
 
-/* RESPONSIVE: View More button centered (removed fixed left margin) */
+
 .btn4 {
   font-weight: 700;
   padding-left: 60px;
@@ -303,14 +299,14 @@ body {
 /* ---------- Section-5 — About ---------- */
 .container-fluid {
   background-color: rgb(23, 23, 35);
-  /* RESPONSIVE: auto height instead of fixed 1050px */
+ 
   height: auto;
   min-height: 400px;
   margin-bottom: 150px;
   padding: 60px 0;
 }
 
-/* RESPONSIVE: about image scales and doesn't overflow */
+
 .about-img {
   width: 100%;
   max-width: 480px;
@@ -327,7 +323,7 @@ body {
   justify-content: center;
 }
 
-/* RESPONSIVE: txt resets fixed margin for small screens */
+
 .txt {
   margin-top: 0;
   margin-left: 0;
@@ -342,7 +338,7 @@ body {
   margin-bottom: 15px;
 }
 
-/* Restore large-screen layout */
+
 @media (min-width: 768px) {
   .txt {
     margin-top: 80px;
@@ -402,7 +398,7 @@ select {
   box-sizing: border-box;
 }
 
-/* RESPONSIVE: map iframe always full width of its container */
+
 .map iframe {
   height: 370px;
   border-radius: 5px;
@@ -410,7 +406,7 @@ select {
   display: block;
 }
 
-/* RESPONSIVE: on mobile, map height adjusts */
+
 @media (max-width: 576px) {
   .map iframe {
     height: 260px;
@@ -422,7 +418,7 @@ select {
   }
 }
 
-/* RESPONSIVE: form & map widths for medium+ screens */
+
 @media (min-width: 768px) {
   .m .form {
     width: 50%;
@@ -434,7 +430,7 @@ select {
 }
 
 /* ---------- Section-7 — Testimonials ---------- */
-/* RESPONSIVE: what heading uses auto margin instead of fixed 400px padding */
+
 .what {
   margin-top: 140px;
   text-align: center;
@@ -456,7 +452,7 @@ select {
   background-color: rgb(23, 23, 35);
 }
 
-/* RESPONSIVE: client images centered */
+
 .im1 img {
   width: 150px;
   border: 8px solid #ffc107;
@@ -489,7 +485,7 @@ select {
 /* ---------- Section-8 — Footer ---------- */
 .container-fluid-1 {
   background-color: rgb(23, 23, 35);
-  /* RESPONSIVE: auto height instead of fixed 600px */
+
   height: auto;
   padding-bottom: 20px;
 }
@@ -508,7 +504,7 @@ select {
   font-size: 20px;
 }
 
-/* RESPONSIVE: footer columns stack and go full-width on mobile */
+
 @media (max-width: 767px) {
   .container-fluid-1 .container {
     flex-direction: column !important;
@@ -540,7 +536,7 @@ select {
 }
 
 /* ---------- Global Image Safety ---------- */
-/* RESPONSIVE: all images are max 100% wide so they never cause horizontal scroll */
+
 img {
   max-width: 100%;
   height: auto;
