@@ -1,0 +1,547 @@
+/* ============================================
+   La Tavola d'Oro — Responsive CSS
+   Original styles preserved. Responsiveness
+   added via media queries and flexible units.
+   ============================================ */
+
+/* ---------- Base / Typography ---------- */
+.navbar-brand {
+  font-family: "Dancing Script", cursive;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  z-index: 99;
+}
+
+.position-absolute {
+  z-index: 99;
+}
+
+/* ---------- Navbar ---------- */
+/* RESPONSIVE: nav links use flex-wrap and natural spacing instead of fixed px-5/ms-5 */
+.nav-links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.nav-links-wrapper .nav-item {
+  padding: 8px 12px;
+}
+
+/* RESPONSIVE: order button stays accessible on mobile */
+.order-btn-wrapper {
+  margin-top: 0;
+}
+
+/* On large screens restore the original top margin */
+@media (min-width: 992px) {
+  .order-btn-wrapper {
+    /* margin-top: 3rem; */
+  }
+
+  .nav-links-wrapper .nav-item {
+    padding: 15px;
+  }
+
+  .nav-links-wrapper .nav-item .nav-link {
+    font-size: 1.3rem;
+    /* padding-top: 3rem !important; */
+  }
+}
+
+/* RESPONSIVE: mobile nav collapse background */
+@media (max-width: 991px) {
+  .navbar {
+    background-color: rgba(23, 23, 35, 0.95) !important;
+    position: fixed !important;
+  }
+
+  .navbar .container {
+    padding-bottom: 0.5rem !important;
+    flex-wrap: wrap;
+  }
+
+  .navbar-brand {
+    margin-top: 0.5rem !important;
+    font-size: 24px !important;
+  }
+
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+    margin-top: 0.5rem;
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(1);
+  }
+
+  #navbarSupportedContent {
+    background-color: rgba(23, 23, 35, 0.98);
+    padding: 10px 0;
+  }
+
+  .nav-links-wrapper .nav-item .nav-link {
+    font-size: 1rem;
+    padding-top: 0.5rem !important;
+  }
+
+  .order-btn {
+    font-size: 0.9rem !important;
+    padding: 8px 16px !important;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* ---------- Hero Section ---------- */
+.section-detail {
+  position: relative;
+  overflow: hidden;
+}
+
+/* RESPONSIVE: hero image covers full width and maintains aspect ratio */
+.hero-img {
+  width: 100%;
+  min-height: 600px;
+  object-fit: cover;
+  display: block;
+}
+
+/* RESPONSIVE: hero text positioned responsively */
+.hero-text {
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 300px 240px 60px 240px;
+  max-width: 70%;
+}
+
+.hero-title {
+  margin-bottom: 30px;
+  font-family: 'Dancing script', cursive;
+  font-size: 50px;
+}
+
+.hero-desc {
+  margin-bottom: 60px;
+  font-size: 25px;
+}
+
+.btn2 {
+  font-weight: 700;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/* RESPONSIVE: hero text adapts to smaller screens */
+@media (max-width: 1200px) {
+  .hero-text {
+    padding: 220px 120px 60px 120px;
+    max-width: 80%;
+  }
+
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .hero-desc {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-img {
+    min-height: 500px;
+  }
+
+  .hero-text {
+    padding: 140px 24px 40px 24px;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+
+  .btn2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 0.95rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-img {
+    min-height: 420px;
+  }
+
+  .hero-text {
+    padding: 110px 16px 30px 16px;
+  }
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-desc {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+}
+
+/* ---------- Section-2 — Offers ---------- */
+/* RESPONSIVE: offer cards row uses flex-wrap and responsive widths */
+.offers-row {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.m1,
+.m2 {
+  width: calc(50% - 16px) !important;
+  margin-right: 0 !important;
+}
+
+/* RESPONSIVE: full width on mobile */
+@media (max-width: 767px) {
+  .m1,
+  .m2 {
+    width: 100% !important;
+  }
+
+  .offers-row {
+    padding-top: 40px;
+  }
+}
+
+/* RESPONSIVE: offer card images scale properly */
+.imges {
+  border: 5px solid rgb(213, 197, 56);
+  border-radius: 100px;
+  display: block;
+  max-width: 100%;
+}
+
+/* ---------- Section-4 — Menu Cards ---------- */
+.card-img-top {
+  background-color: #f1f2f3;
+}
+
+.body,
+.card-footer {
+  background-color: rgb(23, 23, 35);
+}
+
+.cd {
+  background-color: rgb(23, 23, 35);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* RESPONSIVE: menu card images scale without distortion */
+.menu-card-img {
+  width: 50%;
+  max-width: 160px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* RESPONSIVE: View More button centered (removed fixed left margin) */
+.btn4 {
+  font-weight: 700;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: inline-block;
+}
+
+.bt {
+  margin-bottom: 140px;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .btn4 {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1rem !important;
+  }
+
+  .bt {
+    margin-bottom: 60px;
+  }
+}
+
+/* ---------- Section-4 — Menu Navbar ---------- */
+.nav-item {
+  padding: 15px;
+}
+
+.menu,
+.navbar-brand,
+.txt h1,
+.what,
+.contact h1,
+.la h1,
+.open h1 {
+  font-family: 'Dancing script', cursive;
+}
+
+/* ---------- Section-5 — About ---------- */
+.container-fluid {
+  background-color: rgb(23, 23, 35);
+  /* RESPONSIVE: auto height instead of fixed 1050px */
+  height: auto;
+  min-height: 400px;
+  margin-bottom: 150px;
+  padding: 60px 0;
+}
+
+/* RESPONSIVE: about image scales and doesn't overflow */
+.about-img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.im {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* RESPONSIVE: txt resets fixed margin for small screens */
+.txt {
+  margin-top: 0;
+  margin-left: 0;
+  padding: 40px 24px;
+}
+
+.txt p {
+  font-size: 20px;
+}
+
+.txt h1 {
+  margin-bottom: 15px;
+}
+
+/* Restore large-screen layout */
+@media (min-width: 768px) {
+  .txt {
+    margin-top: 80px;
+    margin-left: 60px;
+    padding: 0 24px;
+  }
+
+  .about-img {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .txt {
+    margin-top: 120px;
+    margin-left: 100px;
+  }
+
+  .container-fluid {
+    min-height: 700px;
+  }
+}
+
+.btn5 {
+  font-weight: 700;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: inline-block;
+}
+
+@media (max-width: 480px) {
+  .btn5 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .container-fluid {
+    margin-bottom: 60px;
+  }
+}
+
+/* ---------- Section-6 — Book Table ---------- */
+#booktable {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.form input,
+select {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+/* RESPONSIVE: map iframe always full width of its container */
+.map iframe {
+  height: 370px;
+  border-radius: 5px;
+  width: 100%;
+  display: block;
+}
+
+/* RESPONSIVE: on mobile, map height adjusts */
+@media (max-width: 576px) {
+  .map iframe {
+    height: 260px;
+  }
+
+  .form input,
+  select {
+    font-size: 16px;
+  }
+}
+
+/* RESPONSIVE: form & map widths for medium+ screens */
+@media (min-width: 768px) {
+  .m .form {
+    width: 50%;
+  }
+
+  .m .map {
+    width: 50%;
+  }
+}
+
+/* ---------- Section-7 — Testimonials ---------- */
+/* RESPONSIVE: what heading uses auto margin instead of fixed 400px padding */
+.what {
+  margin-top: 140px;
+  text-align: center;
+  padding-left: 0;
+}
+
+@media (max-width: 768px) {
+  .what {
+    margin-top: 60px;
+    font-size: 2rem !important;
+  }
+}
+
+.m5 p {
+  font-size: 20px;
+}
+
+.m5 {
+  background-color: rgb(23, 23, 35);
+}
+
+/* RESPONSIVE: client images centered */
+.im1 img {
+  width: 150px;
+  border: 8px solid #ffc107;
+  border-radius: 100px;
+  display: block;
+}
+
+.main8 {
+  margin-bottom: 50px;
+}
+
+.im1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.im1::before {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  background-color: #ffc107;
+  z-index: -2;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  top: -5px;
+}
+
+/* ---------- Section-8 — Footer ---------- */
+.container-fluid-1 {
+  background-color: rgb(23, 23, 35);
+  /* RESPONSIVE: auto height instead of fixed 600px */
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.contact,
+.la,
+.open {
+  width: 33%;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.contact p,
+.la p,
+.open p {
+  font-size: 20px;
+}
+
+/* RESPONSIVE: footer columns stack and go full-width on mobile */
+@media (max-width: 767px) {
+  .container-fluid-1 .container {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .contact,
+  .la,
+  .open {
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 0 !important;
+  }
+
+  .contact p,
+  .la p,
+  .open p {
+    font-size: 16px;
+  }
+}
+
+.all {
+  text-align: center;
+  color: #aaa;
+  padding: 20px 0 10px;
+  font-size: 14px;
+}
+
+/* ---------- Global Image Safety ---------- */
+/* RESPONSIVE: all images are max 100% wide so they never cause horizontal scroll */
+img {
+  max-width: 100%;
+  height: auto;
+}

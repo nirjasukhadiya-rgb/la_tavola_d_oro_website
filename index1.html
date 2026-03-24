@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La Tavola d'Oro</title>
+    <link rel="icon" href="./images/logo.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+  </head>
+  <body>
+
+    <!-- -----------header---------- -->
+
+    <nav class="navbar navbar-expand-lg w-100 position-absolute">
+      <div class="container d-flex pb-5">
+        <a class="navbar-brand text-light mt-5" style="font-size: 35px;" href="#">La Tavola d'Oro</a>
+
+        <!-- RESPONSIVE: toggler button shown on mobile -->
+        <button class="navbar-toggler mt-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- RESPONSIVE: collapse wrapper for nav links on mobile -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-links-wrapper">
+            <li class="nav-item">
+              <a class="nav-link active text-light fs-5 pt-lg-5" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light fs-5 pt-lg-5" href="#mainmenu">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light fs-5 pt-lg-5" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light fs-5 pt-lg-5" href="#booktable">BOOK TABLE</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- RESPONSIVE: Order Online button -->
+        <div class="order-btn-wrapper mt-lg-5">
+          <button class="btn bg-warning text-light border rounded-4 p-3 px-4 fs-5 order-btn" type="button">Order Online</button>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <div class="section-detail position-relative">
+      <img src="https://themewagon.github.io/feane/images/hero-bg.jpg" alt="Hero Background" class="hero-img">
+
+      <!-- RESPONSIVE: hero text with responsive padding and font sizes -->
+      <div class="hero-text position-absolute text-light">
+        <h1 class="hero-title" style="font-family: 'Dancing script', cursive;">
+          Fast Food Restaurant
+        </h1>
+        <p class="hero-desc">Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam
+          quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus
+          libero ipsam.</p>
+        <a class="btn2 text-decoration-none bg-warning py-3 border rounded-5 text-light fs-5" href="#">Order Now</a>
+      </div>
+    </div>
+
+
+    <!-- ------------Section-2 - Offers------------ -->
+
+    <div id="mainmenu" class="container">
+      <!-- RESPONSIVE: row stacks on mobile using flex-column on small screens -->
+      <div class="row offers-row">
+        <div class="col-12 col-md-6 m1 d-flex justify-content-center align-items-center bg-secondary border rounded-2 py-4 text-light mb-3 mb-md-0">
+          <div class="img w-25 me-4">
+            <img class="imges w-100 ms-0" src="https://themewagon.github.io/feane/images/o1.jpg" alt="Tasty Thursdays">
+          </div>
+          <div class="con ms-3">
+            <p style="font-size: 25px;">Tasty Thursdays</p>
+            <h3>20% off</h3><br>
+            <a href="" class="btn3 text-decoration-none text-light border rounded-5 bg-warning px-5 py-2">Order Now</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 m2 d-flex justify-content-center align-items-center bg-secondary border rounded-2 py-4 text-light">
+          <div class="img w-25 me-4">
+            <img class="imges w-100 ms-0" src="https://themewagon.github.io/feane/images/o2.jpg" alt="Pizza Days">
+          </div>
+          <div class="con ms-3">
+            <p style="font-size: 25px;">Pizza Days</p>
+            <h3>15% off</h3><br>
+            <a href="" class="btn3 text-decoration-none text-light border rounded-5 bg-warning px-5 py-2">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ------------------Section-4 - Menu------------ -->
+
+    <div class="container">
+      <div class="main4">
+
+        <div class="menu d-flex mt-5 fs-1 mb-4 justify-content-center fw-bold">Our Menu</div>
+
+        <div class="navbar2">
+          <ul class="nav justify-content-center fs-4 mb-5 flex-wrap">
+            <li class="nav-item">
+              <a class="nav-link text-dark" aria-current="page" href="#">All</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="">Burger</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="">Pizza</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark">Pasta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark">fries</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- RESPONSIVE: Cards use Bootstrap row/col for stacking -->
+        <div class="row g-4 mb-4">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="cd h-100">
+              <div class="card-body p-0">
+                <div class="card-img-top justify-content-center p-4 d-flex align-items-center border rounded-5 rounded-top-0 rounded-end-0">
+                  <img src="https://themewagon.github.io/feane/images/f1.png" class="menu-card-img" alt="Delicious Pizza">
+                </div>
+                <div class="body text-light">
+                  <h5 class="card-title pt-3 ms-4 fs-3">Delicious Pizza</h5>
+                  <p class="card-text mt-1 ms-4 fs-5">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                  <small class="text-light fs-4 ms-4">$20</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="cd h-100">
+              <div class="card-body p-0">
+                <div class="card-img-top justify-content-center p-4 d-flex align-items-center rounded-5 rounded-top-0 rounded-end-0">
+                  <img src="https://themewagon.github.io/feane/images/f2.png" class="menu-card-img py-4" alt="Delicious Burger">
+                </div>
+                <div class="body text-light">
+                  <h5 class="card-title pt-3 ms-4 fs-3">Delicious Burger</h5>
+                  <p class="card-text mt-1 ms-4 fs-5">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                  <small class="text-light fs-4 ms-4">$15</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="cd h-100">
+              <div class="card-body p-0">
+                <div class="card-img-top justify-content-center p-4 d-flex align-items-center rounded-5 rounded-top-0 rounded-end-0">
+                  <img src="https://themewagon.github.io/feane/images/f3.png" class="menu-card-img" alt="Delicious Pizza">
+                </div>
+                <div class="body text-light">
+                  <h5 class="card-title pt-3 ms-4 fs-3">Delicious Pizza</h5>
+                  <p class="card-text mt-1 ms-4 fs-5">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                  <small class="text-light fs-4 ms-4">$17</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="cd h-100">
+              <div class="card-body p-0">
+                <div class="card-img-top justify-content-center p-4 d-flex align-items-center rounded-5 rounded-top-0 rounded-end-0">
+                  <img src="https://themewagon.github.io/feane/images/f4.png" class="menu-card-img mt-2 pt-3 pb-5" alt="Delicious Pasta">
+                </div>
+                <div class="body text-light">
+                  <h5 class="card-title pt-3 ms-4 fs-3">Delicious Pasta</h5>
+                  <p class="card-text mt-1 ms-4 fs-5">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                  <small class="text-light fs-4 ms-4">$18</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="cd h-100">
+              <div class="card-body p-0">
+                <div class="card-img-top justify-content-center p-4 d-flex align-items-center rounded-5 rounded-top-0 rounded-end-0">
+                  <img src="https://themewagon.github.io/feane/images/f5.png" class="menu-card-img pb-5 pt-2" alt="French Fries">
+                </div>
+                <div class="body text-light">
+                  <h5 class="card-title pt-3 ms-4 fs-3">French Fries</h5>
+                  <p class="card-text mt-1 ms-4 fs-5">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                  <small class="text-light fs-4 ms-4">$10</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="cd h-100">
+              <div class="card-body p-0">
+                <div class="card-img-top justify-content-center p-4 d-flex align-items-center rounded-5 rounded-top-0 rounded-end-0">
+                  <img src="https://themewagon.github.io/feane/images/f6.png" class="menu-card-img" alt="Delicious Pizza">
+                </div>
+                <div class="body text-light">
+                  <h5 class="card-title pt-3 ms-4 fs-3">Delicious Pizza</h5>
+                  <p class="card-text mt-1 ms-4 fs-5">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                  <small class="text-light fs-4 ms-4">$15</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="cd h-100">
+              <div class="card-body p-0">
+                <div class="card-img-top justify-content-center p-4 d-flex align-items-center rounded-5 rounded-top-0 rounded-end-0">
+                  <img src="https://themewagon.github.io/feane/images/f7.png" class="menu-card-img mt-2" alt="Tasty Burger">
+                </div>
+                <div class="body text-light">
+                  <h5 class="card-title pt-3 ms-4 fs-3">Tasty Burger</h5>
+                  <p class="card-text mt-1 ms-4 fs-5">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                  <small class="text-light fs-4 ms-4">$12</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="cd h-100">
+              <div class="card-body p-0">
+                <div class="card-img-top justify-content-center p-4 d-flex align-items-center rounded-5 rounded-top-0 rounded-end-0">
+                  <img src="https://themewagon.github.io/feane/images/f8.png" class="menu-card-img py-1" alt="Tasty Burger">
+                </div>
+                <div class="body text-light">
+                  <h5 class="card-title pt-3 ms-4 fs-3">Tasty Burger</h5>
+                  <p class="card-text mt-1 ms-4 fs-5">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                  <small class="text-light fs-4 ms-4">$14</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="cd h-100">
+              <div class="card-body p-0">
+                <div class="card-img-top justify-content-center p-4 d-flex align-items-center rounded-5 rounded-top-0 rounded-end-0">
+                  <img src="https://themewagon.github.io/feane/images/f9.png" class="menu-card-img py-1" alt="Delicious Pasta">
+                </div>
+                <div class="body text-light">
+                  <h5 class="card-title pt-3 ms-4 fs-3">Delicious Pasta</h5>
+                  <p class="card-text mt-1 ms-4 fs-5">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                  <small class="text-light fs-4 ms-4">$10</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RESPONSIVE: View More button centered -->
+        <div class="bt text-center">
+          <a class="btn4 text-decoration-none bg-warning py-3 border rounded-5 text-light fs-5" href="#">View More</a>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- -----------Section-5 - About----------- -->
+
+    <div class="container-fluid">
+      <!-- RESPONSIVE: flex direction stacks on mobile -->
+      <div class="container d-flex flex-column flex-md-row w-100 align-items-center">
+        <div class="im w-100 w-md-50 text-center">
+          <img src="https://themewagon.github.io/feane/images/about-img.png" alt="About" class="about-img">
+        </div>
+        <div class="txt text-light w-100 w-md-50">
+          <h1 style="font-size: 50px;">We Are Feane</h1>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+            some form, by injected humour, or randomised words which don't look even slightly believable. If you are
+            going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All</p>
+          <div class="bt mt-5">
+            <a class="btn5 text-decoration-none bg-warning py-3 border rounded-5 text-light fs-5" href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ------------------Section-6 - Book Table------------- -->
+
+    <div id="booktable" class="container w-100">
+      <h1 style="margin-bottom: 30px; font-family: 'Dancing script', cursive; font-weight: 800;">Book A Table</h1>
+      <!-- RESPONSIVE: form and map stack on small screens -->
+      <div class="m d-flex flex-column flex-md-row">
+        <div class="form w-100 w-md-50 me-md-5 mb-4 mb-md-0">
+          <form action="">
+            <input type="text" id="name" placeholder="Your Name"><br>
+            <input type="text" id="pno" placeholder="Phone Number"><br>
+            <input type="email" id="email" placeholder="Your Email"><br>
+            <select name="person" id="person">
+              <option value disabled selected>How Many Person?</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select><br>
+            <input type="date" name="date" id="date"><br>
+          </form>
+          <div class="bt1 mt-4">
+            <a class="btn5 text-decoration-none bg-warning py-2 border rounded-5 text-light fs-5 mb-3" href="#">Book Now</a>
+          </div>
+        </div>
+
+        <!-- RESPONSIVE: map is full width on mobile -->
+        <div class="map w-100 w-md-50">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96775.61963788967!2d-74.12280663904433!3d40.71277440000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fda88cefb3%3A0x7f1e88758d210007!2sNew%20York%20City%20Hall!5e0!3m2!1sen!2sin!4v1769681098954!5m2!1sen!2sin"
+            width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ---------Section-7 - Testimonials----------- -->
+
+    <div class="container">
+      <!-- RESPONSIVE: what heading uses auto margin instead of fixed padding -->
+      <div class="what fw-bolder" style="font-size: 50px;">What Says Our Customers</div>
+
+      <!-- RESPONSIVE: testimonials stack on mobile -->
+      <div class="main7 d-flex flex-column flex-md-row mt-5 mb-5 gap-4">
+        <div class="m5 w-100 border rounded-2 py-4 px-4 text-light">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consequuntur ut laboriosam, itaque voluptatum
+            id ea fuga obcaecati quo ratione hic repudiandae molestiae alias</p>
+          <h3>Mike Hamell</h3>
+          <p>magna aliqua</p>
+        </div>
+
+        <div class="m5 w-100 border rounded-2 py-4 px-4 text-light">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consequuntur ut laboriosam, itaque voluptatum
+            id ea fuga obcaecati quo ratione hic repudiandae molestiae alias</p>
+          <h3>Mike Hamell</h3>
+          <p>magna aliqua</p>
+        </div>
+      </div>
+
+      <!-- RESPONSIVE: client images centered and stacked -->
+      <div class="main8 w-100 d-flex justify-content-center gap-5 flex-wrap">
+        <div class="im1">
+          <img src="https://themewagon.github.io/feane/images/client2.jpg" alt="Client 2">
+        </div>
+        <div class="im1">
+          <img src="https://themewagon.github.io/feane/images/client1.jpg" alt="Client 1">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ----------------Section-8 - Footer------------- -->
+
+    <div id="about" class="container-fluid-1">
+      <!-- RESPONSIVE: footer columns stack on mobile -->
+      <div class="container w-100 d-flex flex-column flex-md-row">
+        <div class="contact text-light text-center">
+          <h1>Contact Us</h1>
+          <p>Location</p>
+          <p>Call +01 1234567890</p>
+          <p>demo@gmail.com</p>
+        </div>
+        <div class="la text-light text-center ms-md-3">
+          <h1>La Tavola d'Oro</h1>
+          <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
+            words, combined with</p>
+        </div>
+        <div class="open text-center text-light ms-md-5">
+          <h1>Opening hours</h1>
+          <p>Everyday</p>
+          <p>10.00 Am-10.00 Pm</p>
+        </div>
+      </div>
+
+      <div class="all">
+        ©2026 All Rights Reserved By Free Html Templates
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
